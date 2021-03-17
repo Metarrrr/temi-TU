@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tar.example.testtar">
 
-<!--    <uses-permission android:name="android.permission.WAKE_LOCK" />-->
-<!--    <uses-feature android:name="android.hardware.type.watch" />-->
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Testtar">
-        <activity android:name=".homebase"></activity>
+        <activity android:name=".home"></activity>
+        <activity android:name=".homebase" />
         <activity android:name=".room2" />
         <activity android:name=".room1" />
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
