@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Button room1;
     Button room2;
     Button homebase;
+    Button home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent3 = new Intent(getApplicationContext(), homebase.class);
                 startActivity(intent3);
+
+            }
+        });
+
+        home = findViewById(R.id.button8);
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent8 = new Intent(getApplicationContext(), home.class);
+                startActivity(intent8);
 
             }
         });

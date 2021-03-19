@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Testtar">
-        <activity android:name=".home"></activity>
+        <activity android:name=".NameShop"></activity>
+        <activity android:name=".ShopRecommend2" />
+        <activity android:name=".ShopRecommend" />
+        <activity android:name=".home" />
         <activity android:name=".homebase" />
         <activity android:name=".room2" />
         <activity android:name=".room1" />
