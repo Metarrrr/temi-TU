@@ -9,9 +9,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button room1;
-    Button room2;
-    Button homebase;
     Button home;
 
     @Override
@@ -19,40 +16,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        room1 = findViewById(R.id.button);
-        room1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent1 = new Intent(getApplicationContext(), room1.class);
-                startActivity(intent1);
-            }
-        });
-
-        room2 = findViewById(R.id.button2);
-        room2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent2 = new Intent(getApplicationContext(),room2.class);
-                startActivity(intent2);
-            }
-        });
-
-        homebase = findViewById(R.id.button3);
-        homebase.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent3 = new Intent(getApplicationContext(), homebase.class);
-                startActivity(intent3);
-
-            }
-        });
-
-        home = findViewById(R.id.button8);
+        home = findViewById(R.id.button01);
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent8 = new Intent(getApplicationContext(), home.class);
-                startActivity(intent8);
+                Intent intent01 = new Intent(getApplicationContext(), home.class);
+                startActivity(intent01);
 
             }
         });

@@ -9,19 +9,19 @@ import android.widget.Button;
 
 public class home extends AppCompatActivity {
 
-    Button btu4;
+    Button btu02;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        btu4 = findViewById(R.id.button7);
-        btu4.setOnClickListener(new View.OnClickListener() {
+        btu02 = findViewById(R.id.button02);
+        btu02.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent7 = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(intent7);
+                Intent intent02 = new Intent(getApplicationContext(),ShopR1.class);
+                startActivity(intent02);
             }
         });
     }

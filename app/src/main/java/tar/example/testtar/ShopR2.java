@@ -7,22 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class homebase extends AppCompatActivity {
+public class ShopR2 extends AppCompatActivity {
 
-    Button btu3;
+    Button btu05;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homebase);
-         //fgfd
-        btu3 = findViewById(R.id.button6);
-        btu3.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_shop_r2);
+
+        btu05 = findViewById(R.id.button05);
+        btu05.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent6 = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(intent6);
+                Intent intent05 = new Intent(getApplicationContext(),ShopR1.class);
+                startActivity(intent05);
             }
         });
+
     }
 }
