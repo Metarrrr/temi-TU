@@ -1,0 +1,538 @@
+Index: app/src/main/res/layout/main_fragment.xml
+===================================================================
+--- app/src/main/res/layout/main_fragment.xml	(revision 6355a59beac71e07204f895e96a9a0c03823f1de)
++++ app/src/main/res/layout/main_fragment.xml	(revision 6355a59beac71e07204f895e96a9a0c03823f1de)
+@@ -1,22 +0,0 @@
+-<?xml version="1.0" encoding="utf-8"?>
+-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+-    xmlns:app="http://schemas.android.com/apk/res-auto"
+-    xmlns:tools="http://schemas.android.com/tools"
+-    android:id="@+id/shop_reccommend"
+-    android:layout_width="match_parent"
+-    android:layout_height="match_parent"
+-    tools:context=".ui.main.ShopReccommendFragment">
+-
+-    <TextView
+-        android:id="@+id/message"
+-        android:layout_width="199dp"
+-        android:layout_height="52dp"
+-        android:text="ShopReccommendFragment"
+-        app:layout_constraintBottom_toBottomOf="parent"
+-        app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.499"
+-        app:layout_constraintStart_toStartOf="parent"
+-        app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.313" />
+-
+-</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(revision 6355a59beac71e07204f895e96a9a0c03823f1de)
++++ app/src/main/AndroidManifest.xml	(date 1616347597178)
+@@ -9,7 +9,13 @@
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:supportsRtl="true"
+         android:theme="@style/Theme.Testtar">
+-        <activity android:name=".NameShop1"></activity>
++        <activity android:name=".GoingHomebs"></activity>
++        <activity android:name=".MainActivity2" />
++        <activity android:name=".Arrived2" />
++        <activity android:name=".TemiBack" />
++        <activity android:name=".Arrived1" />
++        <activity android:name=".GoingShop" />
++        <activity android:name=".NameShop1" />
+         <activity android:name=".ShopR2" />
+         <activity android:name=".ShopR1" />
+         <activity android:name=".home" />
+Index: app/src/main/res/layout/activity_shop_r1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_shop_r1.xml	(revision 6355a59beac71e07204f895e96a9a0c03823f1de)
++++ app/src/main/res/layout/activity_shop_r1.xml	(date 1616345450658)
+@@ -39,21 +39,21 @@
+         android:textSize="50sp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="1.0"
++        app:layout_constraintHorizontal_bias="0.707"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.086" />
++        app:layout_constraintVertical_bias="0.06" />
+ 
+     <ImageButton
+         android:id="@+id/imageButton4"
+-        android:layout_width="254dp"
+-        android:layout_height="150dp"
++        android:layout_width="464dp"
++        android:layout_height="331dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.387"
++        app:layout_constraintHorizontal_bias="0.366"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.218"
++        app:layout_constraintVertical_bias="0.372"
+         app:srcCompat="@drawable/shop1" />
+ 
+     <Button
+Index: app/src/main/java/tar/example/testtar/TemiBack.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/tar/example/testtar/TemiBack.java	(date 1616346130919)
++++ app/src/main/java/tar/example/testtar/TemiBack.java	(date 1616346130919)
+@@ -0,0 +1,14 @@
++package tar.example.testtar;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class TemiBack extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_temi_back);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_temi_back.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_temi_back.xml	(date 1616346868889)
++++ app/src/main/res/layout/activity_temi_back.xml	(date 1616346868889)
+@@ -0,0 +1,38 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".TemiBack">
++
++    <TextView
++        android:id="@+id/textView7"
++        android:layout_width="926dp"
++        android:layout_height="80dp"
++        android:text="Please press to send Temi back to Homeback"
++        android:textAlignment="center"
++        android:textAllCaps="false"
++        android:textSize="40sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.556"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.363" />
++
++    <Button
++        android:id="@+id/button"
++        android:layout_width="367dp"
++        android:layout_height="89dp"
++        android:backgroundTint="@color/black"
++        android:text="Click"
++        android:textAlignment="center"
++        android:textColor="@color/white"
++        android:textSize="36sp"
++        android:textStyle="bold"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/tar/example/testtar/Arrived1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/tar/example/testtar/Arrived1.java	(date 1616346567106)
++++ app/src/main/java/tar/example/testtar/Arrived1.java	(date 1616346567106)
+@@ -0,0 +1,14 @@
++package tar.example.testtar;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class Arrived1 extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_arrived);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_arrived.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_arrived.xml	(date 1616346868874)
++++ app/src/main/res/layout/activity_arrived.xml	(date 1616346868874)
+@@ -0,0 +1,37 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".Arrived1">
++
++    <TextView
++        android:id="@+id/textView3"
++        android:layout_width="587dp"
++        android:layout_height="116dp"
++        android:text="Arrived to Location"
++        android:textAlignment="center"
++        android:textColor="@android:color/background_dark"
++        android:textSize="60sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.522"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++
++    <TextView
++        android:id="@+id/textView5"
++        android:layout_width="281dp"
++        android:layout_height="89dp"
++        android:text="Don't touch"
++        android:textAlignment="center"
++        android:textColor="#F43636"
++        android:textSize="50sp"
++        android:textStyle="bold"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.864" />
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_name_shop1.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_name_shop1.xml	(revision 6355a59beac71e07204f895e96a9a0c03823f1de)
++++ app/src/main/res/layout/activity_name_shop1.xml	(date 1616344835246)
+@@ -8,8 +8,8 @@
+ 
+     <TextView
+         android:id="@+id/textView6"
+-        android:layout_width="72dp"
+-        android:layout_height="36dp"
++        android:layout_width="145dp"
++        android:layout_height="66dp"
+         android:layout_marginTop="16dp"
+         android:layout_marginEnd="9dp"
+         android:layout_marginBottom="16dp"
+@@ -26,8 +26,8 @@
+ 
+     <Button
+         android:id="@+id/button07"
+-        android:layout_width="387dp"
+-        android:layout_height="74dp"
++        android:layout_width="420dp"
++        android:layout_height="94dp"
+         android:text="Back to Shop Recommend"
+         android:textSize="30sp"
+         app:layout_constraintBottom_toBottomOf="parent"
+@@ -39,8 +39,8 @@
+ 
+     <Button
+         android:id="@+id/button08"
+-        android:layout_width="177dp"
+-        android:layout_height="36dp"
++        android:layout_width="206dp"
++        android:layout_height="73dp"
+         android:text="Go to Location"
+         android:textColor="@color/white"
+         android:textSize="24sp"
+@@ -53,14 +53,14 @@
+ 
+     <ImageView
+         android:id="@+id/imageView"
+-        android:layout_width="185dp"
+-        android:layout_height="97dp"
++        android:layout_width="223dp"
++        android:layout_height="133dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.14"
++        app:layout_constraintHorizontal_bias="0.111"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.427"
++        app:layout_constraintVertical_bias="0.394"
+         app:srcCompat="@drawable/fuji1" />
+ 
+     <ImageView
+@@ -69,22 +69,22 @@
+         android:layout_height="161dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.06"
++        app:layout_constraintHorizontal_bias="0.081"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.781"
++        app:layout_constraintVertical_bias="0.743"
+         app:srcCompat="@drawable/fuji2" />
+ 
+     <ImageView
+         android:id="@+id/imageView3"
+-        android:layout_width="108dp"
+-        android:layout_height="121dp"
++        android:layout_width="141dp"
++        android:layout_height="147dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+-        app:layout_constraintHorizontal_bias="0.228"
++        app:layout_constraintHorizontal_bias="0.322"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+-        app:layout_constraintVertical_bias="0.57"
++        app:layout_constraintVertical_bias="0.671"
+         app:srcCompat="@drawable/fuji3" />
+ 
+     <ImageView
+Index: app/src/main/res/layout/activity_main2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main2.xml	(date 1616347364763)
++++ app/src/main/res/layout/activity_main2.xml	(date 1616347364763)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".MainActivity2">
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/tar/example/testtar/Arrived2.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/tar/example/testtar/Arrived2.java	(date 1616347108037)
++++ app/src/main/java/tar/example/testtar/Arrived2.java	(date 1616347108037)
+@@ -0,0 +1,14 @@
++package tar.example.testtar;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class Arrived2 extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_arrived2);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_arrived2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_arrived2.xml	(date 1616347338256)
++++ app/src/main/res/layout/activity_arrived2.xml	(date 1616347338256)
+@@ -0,0 +1,37 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".Arrived2">
++
++    <TextView
++        android:id="@+id/textView8"
++        android:layout_width="644dp"
++        android:layout_height="100dp"
++        android:text="Arrived to Homebase"
++        android:textAlignment="center"
++        android:textColor="@color/black"
++        android:textSize="60sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.35" />
++
++    <TextView
++        android:id="@+id/textView9"
++        android:layout_width="340dp"
++        android:layout_height="78dp"
++        android:text="Don't Touch"
++        android:textAlignment="center"
++        android:textColor="#F43636"
++        android:textSize="50sp"
++        android:textStyle="bold"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.786" />
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/tar/example/testtar/GoingShop.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/tar/example/testtar/GoingShop.java	(date 1616345441626)
++++ app/src/main/java/tar/example/testtar/GoingShop.java	(date 1616345441626)
+@@ -0,0 +1,14 @@
++package tar.example.testtar;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class GoingShop extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_going_shop);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/tar/example/testtar/GoingHomebs.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/tar/example/testtar/GoingHomebs.java	(date 1616347597240)
++++ app/src/main/java/tar/example/testtar/GoingHomebs.java	(date 1616347597240)
+@@ -0,0 +1,14 @@
++package tar.example.testtar;
++
++import androidx.appcompat.app.AppCompatActivity;
++
++import android.os.Bundle;
++
++public class GoingHomebs extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_going_homebs);
++    }
++}
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_going_homebs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_going_homebs.xml	(date 1616347820754)
++++ app/src/main/res/layout/activity_going_homebs.xml	(date 1616347820754)
+@@ -0,0 +1,36 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".GoingHomebs">
++
++    <TextView
++        android:id="@+id/textView10"
++        android:layout_width="695dp"
++        android:layout_height="101dp"
++        android:text="Going to Homebase"
++        android:textAlignment="center"
++        android:textColor="@color/black"
++        android:textSize="60sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.467" />
++
++    <TextView
++        android:id="@+id/textView11"
++        android:layout_width="298dp"
++        android:layout_height="89dp"
++        android:text="Don't Touch"
++        android:textAlignment="center"
++        android:textColor="#F43636"
++        android:textSize="50sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.791" />
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_going_shop.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_going_shop.xml	(date 1616346110399)
++++ app/src/main/res/layout/activity_going_shop.xml	(date 1616346110399)
+@@ -0,0 +1,39 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".GoingShop">
++
++    <TextView
++        android:id="@+id/textView"
++        android:layout_width="348dp"
++        android:layout_height="118dp"
++        android:fontFamily="sans-serif"
++        android:text="Don't touch"
++        android:textAlignment="center"
++        android:textColor="#F43636"
++        android:textSize="50sp"
++        android:textStyle="bold"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.49"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.89" />
++
++    <TextView
++        android:id="@+id/textView2"
++        android:layout_width="668dp"
++        android:layout_height="131dp"
++        android:text="Going to location"
++        android:textAlignment="center"
++        android:textAllCaps="false"
++        android:textColor="@android:color/background_dark"
++        android:textSize="60sp"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent" />
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file

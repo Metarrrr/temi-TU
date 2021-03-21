@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="72dp"
-        android:layout_height="36dp"
+        android:layout_width="145dp"
+        android:layout_height="66dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="16dp"
@@ -26,8 +26,8 @@
 
     <Button
         android:id="@+id/button07"
-        android:layout_width="387dp"
-        android:layout_height="74dp"
+        android:layout_width="420dp"
+        android:layout_height="94dp"
         android:text="Back to Shop Recommend"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,8 +39,8 @@
 
     <Button
         android:id="@+id/button08"
-        android:layout_width="177dp"
-        android:layout_height="36dp"
+        android:layout_width="206dp"
+        android:layout_height="73dp"
         android:text="Go to Location"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -53,14 +53,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="185dp"
-        android:layout_height="97dp"
+        android:layout_width="223dp"
+        android:layout_height="133dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.427"
+        app:layout_constraintVertical_bias="0.394"
         app:srcCompat="@drawable/fuji1" />
 
     <ImageView
@@ -69,22 +69,22 @@
         android:layout_height="161dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.781"
+        app:layout_constraintVertical_bias="0.743"
         app:srcCompat="@drawable/fuji2" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="108dp"
-        android:layout_height="121dp"
+        android:layout_width="141dp"
+        android:layout_height="147dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57"
+        app:layout_constraintVertical_bias="0.671"
         app:srcCompat="@drawable/fuji3" />
 
     <ImageView
