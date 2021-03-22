@@ -10,6 +10,7 @@ import android.widget.Button;
 public class NameShop1 extends AppCompatActivity {
 
     Button btu07;
+    Button btu111;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,15 @@ public class NameShop1 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent07 = new Intent(getApplicationContext(),ShopR1.class);
                 startActivity(intent07);
+            }
+        });
+
+        btu111 = findViewById(R.id.button111);
+        btu111.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent111 = new Intent(getApplicationContext(),Goshop.class);
+                startActivity(intent111);
             }
         });
 

@@ -6,12 +6,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class ShopR1 extends AppCompatActivity {
 
     Button btu03;
     Button btu04;
-    Button btu06;
+    ImageView imageView7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,12 +37,13 @@ public class ShopR1 extends AppCompatActivity {
             }
         });
 
-        btu06 = findViewById(R.id.button06);
-        btu06.setOnClickListener(new View.OnClickListener() {
+        imageView7 = (ImageView) findViewById(R.id.imageView7);
+        imageView7.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent06 = new Intent(getApplicationContext(),NameShop1.class);
-                startActivity(intent06);
+            public void onClick(View v) {
+                Intent go = new Intent(getApplicationContext(),NameShop1.class);
+                startActivity(go);
+
             }
         });
 

@@ -9,13 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Testtar">
-        <activity android:name=".Home"></activity>
+        <activity android:name=".Goshop"></activity>
+        <activity android:name=".Home" />
         <activity android:name=".GoingHomebs" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".Arrived2" />
         <activity android:name=".TemiBack" />
         <activity android:name=".Arrived1" />
-        <activity android:name=".GoingShop" />
         <activity android:name=".NameShop1" />
         <activity android:name=".ShopR2" />
         <activity android:name=".ShopR1" />

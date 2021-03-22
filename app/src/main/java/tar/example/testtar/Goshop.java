@@ -7,25 +7,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-public class Arrived1 extends AppCompatActivity {
+public class Goshop extends AppCompatActivity {
 
-
-    ImageView imageView9;
+    ImageView imageView8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_arrived);
+        setContentView(R.layout.activity_goshop);
 
-
-        imageView9 = (ImageView) findViewById(R.id.imageView9);
-        imageView9.setOnClickListener(new View.OnClickListener() {
+        imageView8 = (ImageView) findViewById(R.id.imageView8);
+        imageView8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent go9 = new Intent(getApplicationContext(),TemiBack.class);
-                startActivity(go9);
+                Intent go8 = new Intent(getApplicationContext(),Arrived1.class);
+                startActivity(go8);
 
             }
         });
+
+
     }
 }

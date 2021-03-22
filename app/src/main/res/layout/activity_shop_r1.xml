@@ -25,50 +25,50 @@
         android:text="Next page >>"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.951" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="715dp"
-        android:layout_height="76dp"
+        android:layout_width="579dp"
+        android:layout_height="84dp"
         android:text="Shop Recommend"
         android:textColor="@color/black"
+        android:textIsSelectable="false"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.707"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintVertical_bias="0.048" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="464dp"
-        android:layout_height="331dp"
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.372"
+        app:layout_constraintVertical_bias="0.43"
         app:srcCompat="@drawable/shop1" />
 
-    <Button
-        android:id="@+id/button06"
-        android:layout_width="185dp"
-        android:layout_height="93dp"
-        android:backgroundTint="#FFFFFF"
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="159dp"
+        android:layout_height="106dp"
         android:text="1"
         android:textColor="@color/black"
-        android:textSize="36sp"
+        android:textIsSelectable="false"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.815" />
+        app:layout_constraintVertical_bias="0.878" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
