@@ -22,7 +22,7 @@ public class ShopR1 extends AppCompatActivity {
         btu03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent03 = new Intent(getApplicationContext(),home.class);
+                Intent intent03 = new Intent(getApplicationContext(),Home.class);
                 startActivity(intent03);
             }
         });

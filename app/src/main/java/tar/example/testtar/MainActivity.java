@@ -9,18 +9,18 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button home;
+    Button Home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        home = findViewById(R.id.button01);
-        home.setOnClickListener(new View.OnClickListener() {
+        Home = findViewById(R.id.button01);
+        Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent01 = new Intent(getApplicationContext(), home.class);
+                Intent intent01 = new Intent(getApplicationContext(), Home.class);
                 startActivity(intent01);
 
             }

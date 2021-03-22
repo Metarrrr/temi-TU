@@ -7,10 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class home extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
     Button btu02;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +19,9 @@ public class home extends AppCompatActivity {
         btu02.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent02 = new Intent(getApplicationContext(),ShopR1.class);
+                Intent intent02 = new Intent(getApplicationContext(), ShopR1.class);
                 startActivity(intent02);
+
             }
         });
     }

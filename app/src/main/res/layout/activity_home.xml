@@ -4,40 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:rotationX="4"
-    tools:context=".home">
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="931dp"
+        android:layout_height="566dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186"
+        app:srcCompat="@drawable/map" />
 
     <Button
         android:id="@+id/button02"
-        android:layout_width="383dp"
-        android:layout_height="55dp"
-        android:backgroundTint="#ED0C0C"
-        android:text="@string/shop_recommend"
+        android:layout_width="418dp"
+        android:layout_height="77dp"
+        android:backgroundTint="#F30808"
+        android:text="Shop Recommend"
         android:textColor="#FFEB3B"
-        android:textColorHighlight="#FFEB3B"
-        android:textColorHint="#FFEB3B"
-        android:textColorLink="#FFEB3B"
-        android:textSize="30sp"
-        app:iconTint="#F31212"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintVertical_bias="0.905" />
 
     <ImageView
-        android:id="@+id/image"
-        android:layout_width="311dp"
-        android:layout_height="408dp"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:background="@drawable/map"
+        android:id="@+id/imageView6"
+        android:layout_width="185dp"
+        android:layout_height="180dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.962"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
-
+        app:layout_constraintVertical_bias="0.972"
+        app:srcCompat="@drawable/microphone" />
 </androidx.constraintlayout.widget.ConstraintLayout>
