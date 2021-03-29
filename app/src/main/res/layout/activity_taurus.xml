@@ -4,29 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Taurus">
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="326dp"
+        android:layout_height="432dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117"
+        app:srcCompat="@drawable/ta1" />
 
     <Button
-        android:id="@+id/button01"
-        android:layout_width="179dp"
-        android:layout_height="113dp"
-        android:text="shop"
+        android:id="@+id/button96"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409" />
-
-    <Button
-        android:id="@+id/button99"
-        android:layout_width="190dp"
-        android:layout_height="70dp"
-        android:text="Zodiar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.608" />
-
+        app:layout_constraintVertical_bias="0.795" />
 </androidx.constraintlayout.widget.ConstraintLayout>

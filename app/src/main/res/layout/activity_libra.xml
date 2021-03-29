@@ -4,29 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Libra">
 
     <Button
-        android:id="@+id/button01"
-        android:layout_width="179dp"
-        android:layout_height="113dp"
-        android:text="shop"
+        android:id="@+id/button91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.409" />
+        app:layout_constraintVertical_bias="0.677" />
 
-    <Button
-        android:id="@+id/button99"
-        android:layout_width="190dp"
-        android:layout_height="70dp"
-        android:text="Zodiar"
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="383dp"
+        android:layout_height="377dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.608" />
-
+        app:layout_constraintVertical_bias="0.158"
+        app:srcCompat="@drawable/li" />
 </androidx.constraintlayout.widget.ConstraintLayout>

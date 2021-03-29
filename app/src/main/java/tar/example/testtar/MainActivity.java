@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button Home;
+    Button zodiac;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent01 = new Intent(getApplicationContext(), Home.class);
                 startActivity(intent01);
+
+            }
+        });
+
+        zodiac = findViewById(R.id.button99);
+        zodiac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent99 = new Intent(getApplicationContext(), zodiac.class);
+                startActivity(intent99);
 
             }
         });
