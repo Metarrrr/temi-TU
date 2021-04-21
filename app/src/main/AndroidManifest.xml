@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Testtar">
-        <activity android:name=".Pisces"></activity>
+        <activity android:name=".Shukishi"></activity>
+        <activity android:name=".Donut" />
+        <activity android:name=".Pizza" />
+        <activity android:name=".Potato" />
+        <activity android:name=".Pisces" />
         <activity android:name=".Aquarius" />
         <activity android:name=".Capricorn" />
         <activity android:name=".Sagittarius" />
