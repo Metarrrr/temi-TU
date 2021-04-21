@@ -7,7 +7,7 @@
     tools:context=".Pizza">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonPiz1"
         android:layout_width="420dp"
         android:layout_height="94dp"
         android:text="Back to Shop Recommend"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.067" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textPiz1"
         android:layout_width="267dp"
         android:layout_height="75dp"
         android:text="Pizza"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.236" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonPiz2"
         android:layout_width="175dp"
         android:layout_height="79dp"
         android:text="Go to Location"

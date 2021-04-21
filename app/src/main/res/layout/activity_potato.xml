@@ -7,7 +7,7 @@
     tools:context=".Potato">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonPotato1"
         android:layout_width="420dp"
         android:layout_height="94dp"
         android:text="Back to Shop Recommend"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.067" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textPotato1"
         android:layout_width="267dp"
         android:layout_height="75dp"
         android:text="Potato"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.236" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonPotato2"
         android:layout_width="175dp"
         android:layout_height="79dp"
         android:text="Go to Location"

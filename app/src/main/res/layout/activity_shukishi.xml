@@ -7,7 +7,7 @@
     tools:context=".Shukishi">
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonShu1"
         android:layout_width="420dp"
         android:layout_height="94dp"
         android:text="Back to Shop Recommend"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.067" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textShu1"
         android:layout_width="419dp"
         android:layout_height="63dp"
         android:text="Shukishi"
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.23000002" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/buttonShu2"
         android:layout_width="175dp"
         android:layout_height="79dp"
         android:text="Go to Location"
