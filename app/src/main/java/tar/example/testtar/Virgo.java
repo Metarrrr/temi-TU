@@ -10,7 +10,7 @@ import android.widget.Button;
 public class Virgo extends AppCompatActivity {
 
     Button btu92;
-
+//TESTMOOK
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
